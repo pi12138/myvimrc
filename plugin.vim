@@ -7,6 +7,7 @@ if exists('*minpac#init')
   " Other plugins
 
   call minpac#add('tpope/vim-eunuch')
+  call minpac#add('yegappan/mru')
 endif
 
 if has('eval')

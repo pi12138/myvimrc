@@ -30,6 +30,20 @@ endif
 set nu
 set showmode
 set laststatus=2
+set tabstop=4
 
 source ~/.vim/plugin.vim
+
+
+if !has('gui_running')
+  " 设置文本菜单
+  if has('wildmenu')
+    set wildmenu
+    set cpoptions-=<
+    set wildcharm=<C-Z>
+    nnoremap <F10>      :emenu <C-Z>
+    inoremap <F10> <C-O>:emenu <C-Z>
+  endif
+endif
+		
 
