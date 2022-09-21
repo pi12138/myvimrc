@@ -1,18 +1,38 @@
 
-if exists('*minpac#init')
-  " Minpac is loaded.
-  call minpac#init()
-  call minpac#add('k-takata/minpac', {'type': 'opt'})
+" if exists('*minpac#init')
+"   " Minpac is loaded.
+"   call minpac#init()
+"   call minpac#add('k-takata/minpac', {'type': 'opt'})
+" 
+"   " Other plugins
+" 
+"   call minpac#add('tpope/vim-eunuch')
+"   call minpac#add('yegappan/mru')
+" endif
+" 
+" if has('eval')
+"   " Minpac commands
+"   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
+"   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+"   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+" endif
+"
 
-  " Other plugins
+" vim-plug
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-  call minpac#add('tpope/vim-eunuch')
-  call minpac#add('yegappan/mru')
-endif
+" Make sure you use single quotes
 
-if has('eval')
-  " Minpac commands
-  command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
-  command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
-  command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
-endif
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+call plug#end()
+
+
