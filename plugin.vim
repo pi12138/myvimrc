@@ -32,6 +32,7 @@ call plug#begin()
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
