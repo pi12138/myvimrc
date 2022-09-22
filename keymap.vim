@@ -2,4 +2,5 @@
 
 " nerdtree
 nnoremap <C-b> :NERDTreeToggle<CR>
-inoremap <C-b> <Esc>:NERDTreeToggle<CR>
+inoremap <C-b> <C-O>:NERDTreeToggle<CR>
+

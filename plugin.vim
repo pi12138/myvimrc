@@ -33,7 +33,12 @@ call plug#begin()
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+
+let g:NERDSpaceDelims = 1
 
 

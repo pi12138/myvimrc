@@ -30,7 +30,8 @@ endif
 
 set nu
 set showmode
-set laststatus=2
+" set laststatus=2
+set laststatus=1
 
 " 语法高亮
 syntax on
@@ -59,3 +60,5 @@ set wildmenu
 " endif
 		
 
+" 显示标签栏
+set showtabline=2
